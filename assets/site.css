@@ -122,8 +122,8 @@ dd { margin: 4px 0 0 0; }
    ========================================================= */
 details.meta {
   margin-top: 14px;
-  padding-top: 10px;
-  border-top: 1px solid var(--border);
+  padding-top: 0;
+  border-top: 0;
 }
 
 details.meta summary {
