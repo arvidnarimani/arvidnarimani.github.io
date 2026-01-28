@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://arvidnarimani.github.io/sitemap.xml
