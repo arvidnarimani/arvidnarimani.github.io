@@ -85,3 +85,30 @@ a:hover { opacity: 0.92; }
 dl { margin: 0; }
 dt { font-weight: var(--heading-weight); margin-top: 10px; }
 dd { margin: 4px 0 0 0; }
+
+details.meta {
+  margin-top: 14px;
+  padding-top: 10px;
+  border-top: 1px solid var(--border);
+}
+
+details.meta summary {
+  cursor: pointer;
+  font-weight: var(--heading-weight);
+  list-style: none;
+}
+
+details.meta summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Optional: subtle disclosure triangle with text */
+details.meta summary::before {
+  content: "▸ ";
+}
+details.meta[open] summary::before {
+  content: "▾ ";
+}
+
+details.meta p { margin: 10px 0 0 0; }
+details.meta dl { margin: 10px 0 0 0; }
