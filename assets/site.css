@@ -3,7 +3,7 @@
 :root {
   /* Typography */
   --text-weight: 400;
-  --strong-weight: 600;     /* set to 500 if you want lighter bold */
+  --strong-weight: 600;     /* set to 500 if you want lighter emphasis */
   --heading-weight: 600;
 
   /* Nordic base palette */
@@ -25,16 +25,14 @@ body {
   line-height: 1.55;
 }
 
-a { color: var(--link); }
-a:hover { text-decoration: underline; }
-
-h1, h2, h3 {
-  font-weight: var(--heading-weight);
+/* Links: no underline; use subtle size change on hover */
+a {
+  color: var(--link);
+  text-decoration: none;
 }
 
-strong, b {
-  font-weight: var(--strong-weight);
-}
+h1, h2, h3 { font-weight: var(--heading-weight); }
+strong, b { font-weight: var(--strong-weight); }
 
 /* Home page layout */
 .home {
@@ -43,25 +41,37 @@ strong, b {
   padding: 0 18px;
 }
 
-.home-link { border-bottom: 1px solid currentColor; padding-bottom: 2px; }
+.home-spacer { height: 18px; }
 
+/* “Grow” effect for homepage links */
+.home-link {
+  font-size: 1.15rem;
+  display: inline-block; /* needed for transform */
+  transition: transform 120ms ease, opacity 120ms ease;
+}
 
-.home-spacer {
-  height: 18px;
+.home-link:hover {
+  transform: scale(1.03);
+  opacity: 0.92;
 }
 
 /* X icon link */
 .x-link {
   display: inline-flex;
   align-items: center;
-  text-decoration: none;
+  transition: transform 120ms ease, opacity 120ms ease;
 }
 
-/* Make the logo match text scale */
+.x-link:hover {
+  transform: scale(1.05);
+  opacity: 0.92;
+}
+
+/* X logo as PNG (or any raster image) */
 .x-logo {
   width: 1.1em;
   height: 1.1em;
   display: inline-block;
   vertical-align: -0.12em;
-  fill: currentColor;
+  object-fit: contain;
 }
