@@ -147,3 +147,9 @@ details.meta dt { font-weight: var(--heading-weight); margin-top: 10px; }
 details.meta dd { margin: 4px 0 0 0; }
 
 details.meta + section { margin-top: 28px; }
+
+hr.divider {
+  border: 0;
+  border-top: 1px solid var(--border);
+  margin: 32px 0;  /* space above and below */
+}
