@@ -1,10 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://arvidnarimani.github.io/</loc>
+    <loc>https://narimani.github.io/</loc>
   </url>
+
   <url>
-    <loc>https://arvidnarimani.github.io/papers/theologie-sans-foi-2021.html</loc>
-    <loc>https://arvidnarimani.github.io/papers/ciceron-devoirs-2022.html</loc>
+    <loc>https://narimani.github.io/preprints/</loc>
+  </url>
+
+  <url>
+    <loc>https://narimani.github.io/notes/</loc>
+  </url>
+
+  <url>
+    <loc>https://narimani.github.io/preprints/theologie-sans-foi-2021.html</loc>
+  </url>
+
+  <url>
+    <loc>https://narimani.github.io/preprints/ciceron-devoirs-2022.html</loc>
   </url>
 </urlset>
