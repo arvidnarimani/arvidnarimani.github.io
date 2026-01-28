@@ -1,16 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap');
 
 :root {
+  /* Typography */
   --text-weight: 400;
-  --strong-weight: 600;   /* use 500 if you want lighter */
+  --strong-weight: 600;     /* set to 500 if you want lighter bold */
   --heading-weight: 600;
+
+  /* Nordic base palette */
+  --bg: #f3f5f7;            /* cool off-white */
+  --text: #111827;          /* deep slate */
+  --link: #0f3d5e;          /* fjord blue */
+  --border: rgba(17, 24, 39, 0.18);
 }
 
+/* Global reset */
+html, body { margin: 0; padding: 0; }
+
+/* Global typography + background */
 body {
+  background: var(--bg);
+  color: var(--text);
   font-family: "STIX Two Text", serif;
   font-weight: var(--text-weight);
-  line-height: 1.5;
+  line-height: 1.55;
 }
+
+a { color: var(--link); }
+a:hover { text-decoration: underline; }
 
 h1, h2, h3 {
   font-weight: var(--heading-weight);
@@ -20,21 +36,21 @@ strong, b {
   font-weight: var(--strong-weight);
 }
 
+/* Home page layout */
 .home {
   max-width: 720px;
   margin: 60px auto;
   padding: 0 18px;
 }
 
-.home-link {
-  font-size: 1.15rem;
-  text-decoration: none;
-}
+.home-link { border-bottom: 1px solid currentColor; padding-bottom: 2px; }
+
 
 .home-spacer {
   height: 18px;
 }
 
+/* X icon link */
 .x-link {
   display: inline-flex;
   align-items: center;
