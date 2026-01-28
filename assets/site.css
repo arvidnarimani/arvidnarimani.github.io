@@ -145,3 +145,5 @@ details.meta .meta-body p { margin: 0 0 10px 0; }
 details.meta dl { margin: 0; }
 details.meta dt { font-weight: var(--heading-weight); margin-top: 10px; }
 details.meta dd { margin: 4px 0 0 0; }
+
+details.meta + section { margin-top: 28px; }
